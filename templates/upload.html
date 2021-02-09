@@ -1,0 +1,21 @@
+<html>
+<head>
+ <title></title>
+ <meta charset="utf-8" />
+</head>
+   <body>
+      <div class="bd-example" align="middle">
+      <br><br>
+      <img src="static\imgs\1.png" align="middle" />
+      <br><br><br><h2>Распознавание объектов и инцидентов на фотоматериалах, полученных с бпла
+</h2><br><br><br>
+
+      <form action = "{{ url_for('upload_file2') }}" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+
+      </div>
+   </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+  <br><br>
+    <div class="bd-example" align="middle">
+
+    <img src="static\imgs\1.png" align="middle" />
+  </div>
+    <br><br>
+    {% for i, img in enumerate(imgs) %}
+    {% if i==0 %}
+    <!-- <img src="{{ join(path, img) }}" alt="User Image" width="640" height="480"> -->
+    <img src="{{ join(path, orig) }}" alt="User Image" width="640" height="480">
+    <p></p>
+    {% else %}
+    <img src="{{ join(path, img) }}" alt="User Image" width="425" height="320">
+    {% endif %}
+    {% endfor %}
+</body>
+</html>
